@@ -1,5 +1,4 @@
-// Simple demo for feeding some random data to Pachube.
-// 2011-07-08 <jc@wippler.nl> http://opensource.org/licenses/mit-license.php
+// Simple demo for feeding some random data to Xively from a single remote sensor using RF24.
 
 #include <EtherCard.h>
 #include <SPI.h>
@@ -108,7 +107,6 @@ void check_radio_messages() {
       // Now, resume listening so we catch the next packets.
       radio.startListening();
     }
-
 } 
 
 void sendpackets() {
